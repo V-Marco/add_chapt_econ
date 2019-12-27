@@ -1,0 +1,158 @@
+\documentclass[10pt, a4paper]{extarticle}
+\setlength{\parskip}{0.5em}
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+\usepackage{mathtools}   % loads »amsmath«
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{physics}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{enumitem}
+
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=magenta
+}
+
+%%% Дополнительная работа с математикой
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % AMS
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+
+%% Шрифты
+\usepackage{euscript}	 % Шрифт Евклид
+\usepackage{mathrsfs} % Красивый матшрифт
+
+\title{Подборка \\ «Введение в теорию вероятностей»}
+\author{Факультатив «Дополнительные главы экономики» \\ Лицей НИУ ВШЭ}
+
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left=20mm,
+	top=20mm,
+	right=20mm
+}
+\setlength{\parindent}{0cm}
+
+\DeclareMathOperator{\Lin}{\mathrm{Lin}}
+\DeclareMathOperator{\Linp}{\Lin^{\perp}}
+\DeclareMathOperator*\plim{plim}
+%\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\card}{card}
+\DeclareMathOperator{\sgn}{sign}
+\DeclareMathOperator{\sign}{sign}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\amn}{arg\,min}
+\DeclareMathOperator*{\amx}{arg\,max}
+\DeclareMathOperator{\cov}{Cov}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\Corr}{Corr}
+\DeclareMathOperator{\pCorr}{pCorr}
+\DeclareMathOperator{\E}{\mathbb{E}}
+\let\P\relax
+\DeclareMathOperator{\P}{\mathbb{P}}
+
+
+
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cU}{\mathcal{U}}
+\newcommand{\cBinom}{\mathcal{Binom}}
+\newcommand{\cPois}{\mathcal{Pois}}
+\newcommand{\cBeta}{\mathcal{Beta}}
+\newcommand{\cGamma}{\mathcal{Gamma}}
+
+\def \R{\mathbb{R}}
+\def \N{\mathbb{N}}
+\def \Z{\mathbb{Z}}
+
+
+
+
+
+\newcommand{\dx}[1]{\,\mathrm{d}#1} % для интеграла: маленький отступ и прямая d
+\newcommand{\ind}[1]{\mathbbm{1}_{\{#1\}}} % Индикатор события
+%\renewcommand{\to}{\rightarrow}
+\newcommand{\eqdef}{\mathrel{\stackrel{\rm def}=}}
+\newcommand{\iid}{\mathrel{\stackrel{\rm i.\,i.\,d.}\sim}}
+\newcommand{\const}{\mathrm{const}}
+
+
+% вместо горизонтальной делаем косую черточку в нестрогих неравенствах
+\renewcommand{\le}{\leqslant}
+\renewcommand{\ge}{\geqslant}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+\renewcommand{\rmdefault}{cmss}
+%\renewcommand{\ttdefault}{cmss}
+\usepackage{sfmath}
+
+\usepackage{enumitem}
+
+\begin{document}
+
+\maketitle
+
+\section*{Задание 1: Шарики}
+В корзине лежит 3 белых, 4 красных и 5 синих шаров. Из корзины наугад достают один шар. Найдите вероятность того, что шар будет белым. Найдите вероятность того, что шар будет белым или синим. Найдите вероятность того, что шар будет не красным (двумя способами). 
+
+\section*{Задание 2: Конкурсанты}
+Конкурс длится три дня недели, со среды по пятницу включительно. В первый день выступают 20 конкурсантов, во второй - 40, в третий – снова 20. Найдите вероятность того, что случайно выбранный конкурсант выступает во второй день. Найдите вероятность того, что случайно выбранный конкурсант выступает не в первый день. 
+
+\section*{Задание 3: Геометрическая вероятность}
+В прямоугольнике со сторонами 4 и 3 начертили круг радиуса 1. Найдите вероятность того, что случайно брошенная на прямоугольник точка попадёт в круг. Найдите вероятность того, что случайно брошенная на прямоугольник точка не попадёт в круг. 
+
+\section*{Задание 4: Отрезок}
+Дан отрезок, проведённый от 0 до 5. Найдите вероятность того, что случайно брошенная на отрезок точка попадёт левее единицы. 
+
+\section*{Задание 5: Орёл и решка}
+Правильную монетку подбрасывают два раза. Найдите вероятность выпадания каждой из комбинаций: ОО, ОР, РО, РР.
+
+\section*{Задание 6: Сажаем дерево}
+Монетку подбрасывают три раза. При первом подбрасывании вероятность выпадания орла равна 1/2, при втором – 1/3, при третьем – 1/5. Найдите вероятность того, что выпадет комбинация, в которой На первом месте стоит орёл (то есть, например, ООО или ОРО). 
+
+\section*{Задание 7: Математическое ожидание}
+Рассмотрим лотерею: с вероятностью 1/3 можно получить 100 руб., с вероятностью 1/6 можно получить 50 руб., в противном случае игрок не получает ничего. Найдите математическое ожидание выигрыша. 
+
+\section*{Задание 8: Формальное математическое ожидание}
+Пусть закон распределения случайной величины $X$ задаётся следующим образом:
+\[
+X = \begin{cases}
+1, &p = 1/4, \\
+-5, &p = 1/4, \\
+0, &p = 1/2 \\
+\end{cases}
+\]
+Найдите $\E(X)$.
+
+\section*{Задание 9: Дисперсия}
+Пусть арбуз может равновероятно весить 3 кг, 4 кг и 5 кг (в зависимости от природных условий). Найдите математическое ожидание и дисперсию массы арбуза. 
+
+\section*{Задание 10: Случайная величина Бернулли}
+Пусть дана случайная величина Бернулли с $p = 1/6$. Найдите математическое ожидание и дисперсию этой случайной величины.
+
+\section*{Задание 11: Связь со статистикой}
+Пусть истинная вероятность выпадания орла при подбрасывании монетки равна $1/2$, но исследователь этого не знает. Для оценки этой вероятности он проводит следующий эксперимент: случайно выбранный человек подкидывает монетку столько раз, сколько скажет исследователь. Исследователь записывает результаты подбрасываний. Результаты приведены ниже. Найдите оценку вероятности в каждом из следующих случаев. Поясните, почему в некоторых случаях была получена некорректная оценка вероятности. Как получить корректную оценку вероятности? 
+\begin{enumerate}[label=\alph*)]
+	\item О, Р.
+	\item О, О, Р.
+	\item О, О, О.
+	\item Р, Р, О, О.
+	\item Р, О, Р, О, Р, О, О, О, О. 
+	\item Р, Р, Р, Р, Р, Р, Р, Р, Р. 
+\end{enumerate}
+
+\section*{Задание 12: Статистика – 2}
+Пусть дана выборка: $1, 4, -2, 0, 0, 1, 5, 1$. Найдите выборочное среднее, выборочную диспресию, моду выборки, оценку вероятности того, что случайно выбранное число равно 0 или 1. 
+
+\end{document}
