@@ -4,8 +4,11 @@
 
 __Материалы к занятиям:__
 - [Подборка: «Введение в финансовый учёт» (16 ноября)](https://github.com/V-Marco/add_chapt_econ/blob/master/fin1.pdf)
-- [Подборка: «Графический анализ данных. Задачи на уравнение регресии (21 декабря)»](https://github.com/V-Marco/add_chapt_econ/blob/master/stat_1/problem_set_regr2.pdf)
-- [Подборка: «Введение в теорию вероятностей (28 декабря)»](https://github.com/V-Marco/add_chapt_econ/blob/master/prob_1/problem_set_prob1.pdf)
+- [Подборка: «Введение в финансовую математику. Проценты» (23 ноября, 30 ноября)](https://github.com/V-Marco/add_chapt_econ/blob/master/problem_set_interest.pdf)
+- [Подборка: «Графический анализ данных. Задачи на уравнение регресии» (21 декабря)](https://github.com/V-Marco/add_chapt_econ/blob/master/stat_1/problem_set_regr2.pdf)
+- [Подборка: «Введение в теорию вероятностей» (28 декабря)](https://github.com/V-Marco/add_chapt_econ/blob/master/prob_1/problem_set_prob1.pdf)
+- [Подборка: «Поведение фирмы» (11 января)](https://github.com/V-Marco/add_chapt_econ/blob/master/problem_set_firms.pdf)
+- [Подборка: «Теория фирмы» (18 января)](https://github.com/V-Marco/add_chapt_econ/blob/master/problem_set_firms_2.pdf)
 
 __Контакты преподавателей:__
 
