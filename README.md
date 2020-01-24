@@ -10,6 +10,9 @@ __Материалы к занятиям:__
 - [Подборка: «Поведение фирмы» (11 января)](https://github.com/V-Marco/add_chapt_econ/blob/master/problem_set_firms.pdf)
 - [Подборка: «Теория фирмы» (18 января)](https://github.com/V-Marco/add_chapt_econ/blob/master/problem_set_firms_2.pdf)
 
+__Проверочные работы:__
+- [Проверочная работа 1: Финансовый учёт. Финансовая математика. Анализ данных. Введение в теорию вероятностей. Теория фирмы (24 января)](https://github.com/V-Marco/add_chapt_econ/blob/master/Test_24_Jan_ac.pdf)
+
 __Контакты преподавателей:__
 
 Омелюсик Владимир Степанович:
